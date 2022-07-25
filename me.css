@@ -1,0 +1,487 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    background: url(./imgs/space.jpeg);
+}
+/* menu styling */
+a{
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+header{
+  height: 100vh;
+  color: white;
+  overflow: hidden;
+}
+.section{
+  height: 100vh;
+  color: white;
+  overflow: hidden;
+  transform: translateY(-100%) scale(0);
+  transition: all .4s ease-in-out;
+  overflow: hidden;
+}
+
+.sec1{
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+.sec2{
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+.sec3{
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+.sec4{
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+.sec5{
+  display: none;
+  transform: translateY(0) scale(1);
+}
+.active{
+  display: block;
+  animation: scaleAnim 1s ease-in-out;
+}
+@keyframes scaleAnim{
+  0%{
+    transform: translateY(-100%) scale(0);
+  }
+  100%{
+    transform: translateY(0) scale(1);
+  }
+}
+.controls{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  right: 3%;
+  transform: translateY(-50%);
+}
+.control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  cursor: pointer;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: blue;
+  margin: .7rem 0;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.active-btn{
+  background-color: limegreen;
+  transition: all .4s ease-in-out;
+}
+i{
+  font-size: 1.2rem;
+  color: white;
+  pointer-events: none;
+}
+/* home-content styling */
+.home-content{
+  height: 100%;
+}
+.top{
+  height: 20%;
+}
+.name{
+    color: white;
+    font-family: 'Rubik Moonrocks', 'Times New Roman', Times, serif;
+    height: inherit;
+    font-size: 10vw;
+    text-align: center;
+}
+.left-right{
+  position:static;
+  display: flex;
+  flex-direction: row;
+  height: 80%;
+  align-items: center;
+  justify-content: center;
+}
+.left{
+  width: 30%;
+  height: 100%;
+}
+.photo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+}
+.photo img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+  border-radius: 30%;
+}
+.right{
+  padding-top: 10%;
+  height: 100%;
+  width: 40%;
+  font-family: 'Montserrat';
+  font-size: 4vw;
+  text-align: center;
+  position: relative;
+}
+.right p span{
+  font-family: 'Bebas Neue';
+  background-color: white;
+  color: red;
+}
+.right p span:hover{
+  color: yellow;
+  background-color: black;
+}
+@media (max-width: 1000px) {
+  .left-right{
+    padding-top: 15%;
+  }
+  .name{
+    font-size: 14vw;
+  }
+  .photo{
+    height: 60vw;
+  }
+  .right{
+    padding-top: 20%;
+    font-size: 5vw;
+  }
+  
+}
+/* about-content styling */
+.about-content{
+  height: 100%;
+}
+.left-right-about{
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  height: 80%;
+  align-items: center;
+  justify-content: center;
+}
+.left-about{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 30%;
+  height: 100%;
+}
+.left-about h1{
+  font-family: 'Roboto Mono';
+  font-size: 5vw;
+  text-decoration: none;
+  padding-right: 100px;
+}
+.right-about{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+  width: 40%;
+  height: 100%;
+  text-align: center;
+}
+.right-about p{
+  font-weight: 500;
+  padding-bottom: 4vh;
+  font-family: 'Montserrat';
+  color: white;
+}
+.right-about p span{
+  font-size: 2.5vw;
+  font-family: 'Bebas Neue';
+  color: yellow;
+}
+@media (max-width: 700px) {
+  .right-about{
+    font-size: 3vw;
+  }
+  .right-about p span{
+    font-size: 3.5vw;
+  }
+}
+
+/* portfolio-content */
+.portfolio-content{
+  height: 100%;
+}
+.left-right-portfolio{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 80%;
+}
+.left-portfolio{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 95%;
+  padding: 0 20px;
+}
+
+.skill-name{
+  font-family: 'Bebas Neue';
+  font-size: 4vw;
+  color: yellow;
+  margin: 20px 0;
+}
+
+.skill-bar{
+  width: 35vw;
+  height: 15px;
+  background: #252525;
+  border-radius: 6px;
+}
+
+.skill-width{
+  height: 15px;
+  background: white;
+  border-radius: 6px;
+  position: relative;
+  animation: filling 10s 1;
+}
+
+@keyframes filling {
+  from{
+    width: 0;
+  }
+  to{
+    width: 100%;
+  }
+}
+
+.right-portfolio{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  text-align:center;
+}
+.top-p-portfolio{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  font-family: 'Roboto Mono';
+  color: white;
+  font-weight: 1000;
+  font-size: 1.3vw;
+}
+.right-bottom-portfolio{
+  margin-top: -50px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+}
+.square-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+}
+.square {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(255,255, 0.1), rgb(138, 43, 226), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.square h1{
+  margin-top: 0.5vh;
+  margin-bottom: 0.5vh;
+  text-align: center;
+  height: 10%;
+  width: 100%;
+  font-family: 'Bebas Neue';
+  color: white;
+  font-weight: 1000;
+  font-size: 1.8vw;
+}
+.square h2{
+  padding-left: 5px;
+  text-align: left;
+  height: 10%;
+  width: 100%;
+  font-size: 1vw;
+  font-weight: bolder;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+}
+.square h3{
+  margin-top: -5px;
+  margin-bottom: 0.5vh;
+  padding-left: 5px;
+  text-align: left;
+  height: 10%;
+  width: 100%;
+  font-size: 1vw;
+  font-weight: normal;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+}
+
+.square p{
+  height: 70%;
+  width: 100%;
+  font-size: 1.4vw;
+  font-weight: 200;
+  font-family: 'Montserrat';
+  color: black;
+}
+.rectangle-wrapper{
+  padding-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+}
+.rectangle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(135deg,rgb(138, 43, 226), rgb(255,255, 0), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.rectangle h4{
+  margin-top: 0.5vh;
+  margin-bottom: 0.5vh;
+  text-align: center;
+  height: 10%;
+  width: 100%;
+  font-family: 'Bebas Neue';
+  color: white;
+  font-weight: 1000;
+  font-size: 1.8vw;
+}
+.rectangle h5{
+  padding-left: 5px;
+  text-align: left;
+  height: 10%;
+  width: 100%;
+  font-size: 1vw;
+  font-weight: bolder;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+}
+.rectangle h6{
+  margin-top: -5px;
+  margin-bottom: 0.5vh;
+  padding-left: 8px;
+  text-align: left;
+  height: 10%;
+  width: 100%;
+  font-size: 1vw;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: normal;
+  color: white;
+}
+.rectangle p{
+  height: 70%;
+  width: 100%;
+  font-size: 1.3vw;
+  font-weight: 200;
+  font-family: 'Montserrat';
+  color: black;
+}
+@media (max-width: 900px) {
+  .top-p-portfolio{
+    font-size: 1.3vh;
+  }
+  .square{
+    height: 65%;
+    width: 100%;
+  }
+
+  .rectangle{
+    height: 65%;
+    width: 100%;
+  }
+  /* .square h1{
+    font-size: 2vh;
+  }
+  .square h2{
+    font-size: 1.2vh;
+  }
+  .square h3{
+    font-size: 1.2vh;
+    margin-top: 0px;
+    margin-bottom: 0.5vh;
+  }
+  .square p{
+    font-size: 1.6vw;
+  } */
+
+  /* .rectangle h4{
+    font-size: 2.8vw;
+  }
+  .rectangle h5{
+    font-size: 2vw;
+  }
+  .rectangle h6{
+    font-size: 2vw;
+  }
+  .rectangle p{
+    font-size: 2.3vw;
+  } */
+
+}
+
+/* project content */
+.project-content{
+  height: 100%;
+}
