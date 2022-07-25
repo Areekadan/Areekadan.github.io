@@ -279,238 +279,206 @@ i{
   }
 }
 
-.right-top-portfolio{
+.right-portfolio{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 50%;
-  height: 80%;
+  height: 100%;
   text-align:center;
 }
-.right-top-portfolio p{
+.top-p-portfolio{
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50%;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(1px);
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  font-family: 'Montserrat';
+  font-family: 'Roboto Mono';
   color: white;
   font-weight: 1000;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
 }
 .right-middle-portfolio{
+  margin-top: -50px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+}
+.square-wrapper{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60%;
-  width: 100%;
+  width: 40%;
+  height: 100%;
 }
-.circle {
-  width: 15vw;
-  height: 15vw;
-  line-height: 100px;
+.square {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 35vh;
+  height: 35vh; */
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
-  font-size: 1.2vw;
-  text-align: center;
   background: linear-gradient(135deg, rgba(255,255, 0.1), rgba(255, 255, 255, 0));
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  font-family: 'Montserrat';
+}
+.square h1{
+  margin-top: 0.5vh;
+  margin-bottom: 0.5vh;
+  text-align: center;
+  height: 10%;
+  width: 100%;
+  font-family: 'Bebas Neue';
   color: white;
   font-weight: 1000;
-  font-size: 1.5vw;
+  font-size: 1.8vw;
 }
-/* cube styling */
-*, *:before, *:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box; 
+.square h2{
+  padding-left: 5px;
+  text-align: left;
+  height: 10%;
+  width: 100%;
+  font-size: 1vw;
+  font-weight: bolder;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
 }
-#wrapper {
-    background: #252525;
-    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-    font-weight: 300;
-    margin-top: 7%;
-    padding-bottom: 25%;
-  }
-  
-  .viewport {
-    width: 50%;
-    margin-left: 25%;
-    -webkit-perspective: 800px;
-    -moz-perspective: 800px;
-    -ms-perspective: 800px;
-    -o-perspective: 800px;
-    perspective: 800px;
-    -webkit-perspective-origin: 50% 200px;
-    -moz-perspective-origin: 50% 200px;
-    -ms-perspective-origin: 50% 200px;
-    -o-perspective-origin: 50% 200px;
-    perspective-origin: 50% 200px;
-    -webkit-transform: scale(1.2, 1.2);
-    -moz-transform: scale(1.2, 1.2);
-    -ms-transform: scale(1.2, 1.2);
-    -o-transform: scale(1.2, 1.2);
-    transform: scale(1.2, 1.2);
-    -webkit-box-reflect: below 110px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0%, transparent), to(rgba(250, 250, 250, 0.1)));
- }
- .cube {
-    position: relative;
-    margin: 0 auto;
-    height: 200px;
-    width: 200px;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-transform: rotateX(136deg) rotateY(1122deg);
-    -moz-transform: rotateX(136deg) rotateY(1122deg);
-    -ms-transform: rotateX(136deg) rotateY(1122deg);
-    -o-transform: rotateX(136deg) rotateY(1122deg);
-    transform: rotateX(136deg) rotateY(1122deg);
-   }
+.square h3{
+  margin-top: -5px;
+  margin-bottom: 0.5vh;
+  padding-left: 5px;
+  text-align: left;
+  height: 10%;
+  width: 100%;
+  font-size: 1vw;
+  font-weight: normal;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+}
 
-   .cube > div {
-    overflow: hidden;
-    position: absolute;
-    opacity: 0.9;
-    height: 200px;
-    width: 200px;
-    -webkit-touch-callout: none;
-    -moz-touch-callout: none;
-    -ms-touch-callout: none;
-    -o-touch-callout: none;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
- }
-
- .cube > div > div.cube-image {
-    align-items: center;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    width: 200px;
-    height: 200px;
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg);
-    color: white;
-    background-color: black;
-    -webkit-transition: color 600ms;
-    -moz-transition: color 600ms;
-    -ms-transition: color 600ms;
-    -o-transition: color 600ms;
-    transition: color 600ms; }
-    .cube > div > div.cube-image.active {
-    color: black;
-    background-color: white; 
+.square p{
+  height: 70%;
+  width: 100%;
+  font-size: 1.4vw;
+  font-weight: 200;
+  font-family: 'Montserrat';
+  color: whitesmoke;
 }
-.cube > div > div.cube-image > div.cube-image.p{
-  line-height: 200px;
-  font-size: 70px;
+.rectangle-wrapper{
+  padding-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+}
+.rectangle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(255,255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.rectangle h4{
+  margin-top: 0.5vh;
+  margin-bottom: 0.5vh;
   text-align: center;
+  height: 10%;
+  width: 100%;
+  font-family: 'Bebas Neue';
+  color: white;
+  font-weight: 1000;
+  font-size: 1.8vw;
 }
-
-.cube > div:hover {
-    cursor: pointer; }
-  
-  .cube > div:active {
-    cursor: pointer; }
-  
-  .cube > div:first-child {
-    -webkit-transform: rotateX(90deg) translateZ(100px);
-    -moz-transform: rotateX(90deg) translateZ(100px);
-    -ms-transform: rotateX(90deg) translateZ(100px);
-    -o-transform: rotateX(90deg) translateZ(100px);
-    transform: rotateX(90deg) translateZ(100px);
-    outline: 1px solid transparent; }
-  
-  .cube > div:nth-child(2) {
-    -webkit-transform: translateZ(100px);
-    -moz-transform: translateZ(100px);
-    -ms-transform: translateZ(100px);
-    -o-transform: translateZ(100px);
-    transform: translateZ(100px);
-    outline: 1px solid transparent; }
-  
-  .cube > div:nth-child(3) {
-    -webkit-transform: rotateY(90deg) translateZ(100px);
-    -moz-transform: rotateY(90deg) translateZ(100px);
-    -ms-transform: rotateY(90deg) translateZ(100px);
-    -o-transform: rotateY(90deg) translateZ(100px);
-    transform: rotateY(90deg) translateZ(100px);
-    outline: 1px solid transparent; }
-  
-  .cube > div:nth-child(4) {
-    -webkit-transform: rotateY(180deg) translateZ(100px);
-    -moz-transform: rotateY(180deg) translateZ(100px);
-    -ms-transform: rotateY(180deg) translateZ(100px);
-    -o-transform: rotateY(180deg) translateZ(100px);
-    transform: rotateY(180deg) translateZ(100px);
-    outline: 1px solid transparent; }
-  
-  .cube > div:nth-child(5) {
-    -webkit-transform: rotateY(-90deg) translateZ(100px);
-    -moz-transform: rotateY(-90deg) translateZ(100px);
-    -ms-transform: rotateY(-90deg) translateZ(100px);
-    -o-transform: rotateY(-90deg) translateZ(100px);
-    transform: rotateY(-90deg) translateZ(100px);
-    outline: 1px solid transparent; }
-  
-  .cube > div:nth-child(6) {
-    -webkit-transform: rotateX(-90deg) rotate(180deg) translateZ(100px);
-    -moz-transform: rotateX(-90deg) rotate(180deg) translateZ(100px);
-    -ms-transform: rotateX(-90deg) rotate(180deg) translateZ(100px);
-    -o-transform: rotateX(-90deg) rotate(180deg) translateZ(100px);
-    transform: rotateX(-90deg) rotate(180deg) translateZ(100px);
-    outline: 1px solid transparent; }
-  
-  object {
-    opacity: 0.5; }
-  
-  object:hover {
-    opacity: 1; }
-  
-  @media (max-width: 1300px) {
-    .viewport {
-      -webkit-transform: scale(0.8, 0.8);
-      -moz-transform: scale(0.8, 0.8);
-      -ms-transform: scale(0.8, 0.8);
-      -o-transform: scale(0.8, 0.8);
-      transform: scale(0.8, 0.8); }
-    #wrapper{
-      margin-top: 7%;
-      padding-bottom: 20%;
-    }
+.rectangle h5{
+  padding-left: 5px;
+  text-align: left;
+  height: 10%;
+  width: 100%;
+  font-size: 1vw;
+  font-weight: bolder;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+}
+.rectangle h6{
+  margin-top: -5px;
+  margin-bottom: 0.5vh;
+  padding-left: 8px;
+  text-align: left;
+  height: 10%;
+  width: 100%;
+  font-size: 1vw;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: normal;
+  color: white;
+}
+.rectangle p{
+  height: 70%;
+  width: 100%;
+  font-size: 1.3vw;
+  font-weight: 200;
+  font-family: 'Montserrat';
+  color: whitesmoke;
+}
+@media (max-width: 900px) {
+  .top-p-portfolio{
+    font-size: 1.3vh;
   }
-  @media (max-width: 800px) {
-    .viewport {
-      -webkit-transform: scale(0.5, 0.5);
-      -moz-transform: scale(0.5, 0.5);
-      -ms-transform: scale(0.5, 0.5);
-      -o-transform: scale(0.5, 0.5);
-      transform: scale(0.5, 0.5); }
-    #wrapper{
-      margin-top: 3%;
-      padding-bottom: 20%;
-    }
-  } 
-  
+  .square{
+    height: 65%;
+    width: 100%;
+  }
+
+  .rectangle{
+    height: 65%;
+    width: 100%;
+  }
+  /* .square h1{
+    font-size: 2vh;
+  }
+  .square h2{
+    font-size: 1.2vh;
+  }
+  .square h3{
+    font-size: 1.2vh;
+    margin-top: 0px;
+    margin-bottom: 0.5vh;
+  }
+  .square p{
+    font-size: 1.6vw;
+  } */
+
+  /* .rectangle h4{
+    font-size: 2.8vw;
+  }
+  .rectangle h5{
+    font-size: 2vw;
+  }
+  .rectangle h6{
+    font-size: 2vw;
+  }
+  .rectangle p{
+    font-size: 2.3vw;
+  } */
+
+}
